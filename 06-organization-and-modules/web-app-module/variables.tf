@@ -3,7 +3,7 @@
 variable "region" {
   description = "Default region for provider"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-southeast-1"
 }
 
 variable "app_name" {
@@ -23,7 +23,7 @@ variable "environment_name" {
 variable "ami" {
   description = "Amazon machine image to use for ec2 instance"
   type        = string
-  default     = "ami-011899242bb902164" # Ubuntu 20.04 LTS // us-east-1
+  default     = "ami-01938df366ac2d954"
 }
 
 variable "instance_type" {
@@ -41,28 +41,28 @@ variable "bucket_prefix" {
 
 # Route 53 Variables
 
-variable "create_dns_zone" {
-  description = "If true, create new route53 zone, if false read existing route53 zone"
-  type        = bool
-  default     = false
-}
+# variable "create_dns_zone" {
+#   description = "If true, create new route53 zone, if false read existing route53 zone"
+#   type        = bool
+#   default     = false
+# }
 
-variable "domain" {
-  description = "Domain for website"
-  type        = string
-}
+# variable "domain" {
+#   description = "Domain for website"
+#   type        = string
+# }
 
 # RDS Variables
 
-variable "db_name" {
-  description = "Name of DB"
-  type        = string
-}
+# variable "db_name" {
+#   description = "Name of DB"
+#   type        = string
+# }
 
-variable "db_user" {
-  description = "Username for DB"
-  type        = string
-}
+# variable "db_user" {
+#   description = "Username for DB"
+#   type        = string
+# }
 
 variable "db_pass" {
   description = "Password for DB"
